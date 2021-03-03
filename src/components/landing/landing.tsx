@@ -8,24 +8,38 @@ const Landing = () => {
     <div className="landingPage">
       <div className="sidebar">
         {/* logo | home | menu | mensagens | logout */}
-        <h1>hello world</h1>
       </div>
+
       <div className="landing">
+
         <header>
           {/* caminho | pesquisa | configuração | notificacao | perfil */}
-          <h1>hello world</h1>
         </header>
 
-        <div className="cards-div">
-          <div className="cards">
-            <h1>hello world</h1>
-          </div>
-        </div>
+        <div className="landing-content">
 
-        <div className="graficos-div">
-          <div className="graficos">
-            <h1>hello world</h1>
+          <div className="cards-div">
+            <div className="cards">
+            </div>
+            <div className="cards">
+
+            </div>
+            <div className="cards">
+
+            </div>
+            <div className="cards">
+            </div>
           </div>
+
+          <div className="graficos-div">
+            <div className="graficos">
+            </div>
+            <div className="graficos mid">
+            </div>
+            <div className="graficos">
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
