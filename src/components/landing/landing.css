@@ -182,13 +182,49 @@ header .headerMenu .headerSearch input{
 }
 
 .landing-content .graficos-div .graficos{
+  height: 550px;
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
 
   background: #1B1B1B;
   color: #fff;
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 
-  height: 550px;
+}
+
+.landing-content .graficos-div .graficos .divInfo{
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landing-content .graficos-div .graficos > span{
+  padding: 30px 0 60px 0;
+
+  font-size: 25px;
+  font-weight: 700;
+  color: #c6c6c6;
+}
+
+.landing-content .graficos-div .graficos .graficosInfo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing-content .graficos-div .graficos .graficosInfo strong{
+  font-size: 30px;
+}
+.landing-content .graficos-div .graficos .graficosInfo span{
+  font-size: 20px;
+  font-weight: 700;
+  color: #c6c6c6;
 }
 
 .graficos-div .graficos.mid{

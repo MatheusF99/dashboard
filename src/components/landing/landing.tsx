@@ -52,6 +52,7 @@ const Landing = () => {
         <div className="landing-content">
 
           <div className="cards-div">
+
             <div className="cards">
               <div className="cardInfo">
                 <span>Revenue</span>
@@ -61,6 +62,7 @@ const Landing = () => {
                 <BiDollar size={30} />
               </div>
             </div>
+
             <div className="cards">
               <div className="cardInfo">
                 <span>Orders</span>
@@ -70,6 +72,7 @@ const Landing = () => {
                 <RiNewspaperLine size={30} />
               </div>
             </div>
+
             <div className="cards">
               <div className="cardInfo">
                 <span>Profits</span>
@@ -79,6 +82,7 @@ const Landing = () => {
                 <BsGraphUp size={30} />
               </div>
             </div>
+
             <div className="cards">
               <div className="cardInfo">
                 <span>Users</span>
@@ -88,31 +92,45 @@ const Landing = () => {
                 <BsPerson size={30} />
               </div>
             </div>
+
           </div>
 
           <div className="graficos-div">
+
             <div className="graficos">
               <span>Progress</span>
-              <strong>$53k</strong>
-              <span>Target</span>
+              <div className="graficosInfo">
+                <strong>$53k</strong>
+                <span>Target</span>
+              </div>
             </div>
+
             <div className="graficos mid">
               <span>Earnings</span>
-
-              <strong>$34,533</strong>
-              <span>Revenue</span>
-
-              <strong>$2,345</strong>
-              <span>Profits</span>
-
-              <strong>$811</strong>
-              <span>Orders</span>
+              <div className="divInfo">
+                <div className="graficosInfo">
+                  <strong>$34,533</strong>
+                  <span>Revenue</span>
+                </div>
+                <div className="graficosInfo">
+                  <strong>$2,345</strong>
+                  <span>Profits</span>
+                </div>
+                <div className="graficosInfo">
+                  <strong>$811</strong>
+                  <span>Orders</span>
+                </div>
+              </div>
             </div>
+
             <div className="graficos">
               <span>Users</span>
-              <strong>234</strong>
-              <span>Today</span>
+              <div className="graficosInfo">
+                <strong>234</strong>
+                <span>Today</span>
+              </div>
             </div>
+
           </div>
 
         </div>
