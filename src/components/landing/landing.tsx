@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { BiSearchAlt, BiBell, BiDollar } from 'react-icons/bi'
+import { BiDollar } from 'react-icons/bi'
 import { RiNewspaperLine } from 'react-icons/ri'
 
-import { AiOutlineSetting } from 'react-icons/ai'
 import { BsGraphUp, BsPerson } from 'react-icons/bs'
 
 import './landing.css'
 import Sidebar from '../sidebar/sidebar';
+import Headers from '../header/header'
 
 // import { Container } from './styles';
 
@@ -19,19 +19,7 @@ const Landing = () => {
 
       <div className="landing">
 
-        <header>
-          {/* caminho | pesquisa | configuração | notificacao | perfil */}
-          <span>Home/<strong>Dashboard</strong></span>
-
-          <div className='headerMenu'>
-            <div className="headerSearch">
-              <BiSearchAlt size={25} />
-              <input type="text" placeholder="Search..." />
-            </div>
-            <a href='//'><AiOutlineSetting size={25} /></a>
-            <a href='//'><BiBell size={25} /></a>
-          </div>
-        </header>
+        <Headers />
 
         <div className="landing-content">
 
