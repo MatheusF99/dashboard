@@ -8,6 +8,7 @@
   background: #242424;
 }
 
+
 .sidebar{
   background: #0F0F0F;
   color: #fff;
@@ -33,6 +34,7 @@
   margin: 20px 0;
 }
 
+
 .landing{
   height: 100%;
 
@@ -42,6 +44,7 @@
 
   flex-direction: column;
 }
+
 
 header{
 
@@ -54,8 +57,52 @@ header{
   padding: 0 20px;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
+}
+
+header .headerMenu {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: relative;
+}
+
+header .headerMenu a{
+  text-decoration: none;
+
+  color: #fff;
+
+}
+
+header .headerMenu .headerSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+}
+
+header .headerMenu .headerSearch svg{
+  position: absolute;
+  right: 15px;
+}
+
+header .headerMenu .headerSearch input{
+  width: 150px;
+  height: 40px;
+
+  padding: 15px;
+
+  background: #2d2d2d;
+  border: 0;
+  border-radius: 50px;
+
+  color: #fff;
 }
 
 .landing-content{

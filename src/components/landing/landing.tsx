@@ -39,9 +39,14 @@ const Landing = () => {
           {/* caminho | pesquisa | configuração | notificacao | perfil */}
           <span>Home/<strong>Dashboard</strong></span>
 
-          <BiSearchAlt />
-          <AiOutlineSetting />
-          <BiBell />
+          <div className='headerMenu'>
+            <div className="headerSearch">
+              <BiSearchAlt size={25} />
+              <input type="text" placeholder="Search..." />
+            </div>
+            <a href='//'><AiOutlineSetting size={25} /></a>
+            <a href='//'><BiBell size={25} /></a>
+          </div>
         </header>
 
         <div className="landing-content">
@@ -96,7 +101,7 @@ const Landing = () => {
 
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
