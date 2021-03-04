@@ -8,6 +8,7 @@ import { BsGraphUp, BsPerson } from 'react-icons/bs'
 import './landing.css'
 import Sidebar from '../sidebar/sidebar';
 import Headers from '../header/header'
+import { GoogleChartsBar, GoogleChartArea, GoogleChartDonut } from '../googlecharts/googlecharts';
 
 // import { Container } from './styles';
 
@@ -75,6 +76,7 @@ const Landing = () => {
                 <strong>$53k</strong>
                 <span>Target</span>
               </div>
+              <GoogleChartDonut />
             </div>
 
             <div className="graficos mid">
@@ -93,6 +95,7 @@ const Landing = () => {
                   <span>Orders</span>
                 </div>
               </div>
+              <GoogleChartArea />
             </div>
 
             <div className="graficos">
@@ -100,6 +103,7 @@ const Landing = () => {
               <div className="graficosInfo">
                 <strong>234</strong>
                 <span>Today</span>
+                <GoogleChartsBar />
               </div>
             </div>
 
