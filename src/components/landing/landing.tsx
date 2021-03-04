@@ -53,24 +53,40 @@ const Landing = () => {
 
           <div className="cards-div">
             <div className="cards">
-              <span>Revenue</span>
-              <strong>$34k</strong>
-              <BiDollar />
+              <div className="cardInfo">
+                <span>Revenue</span>
+                <strong>$34k</strong>
+              </div>
+              <div className="cardIcon">
+                <BiDollar size={30} />
+              </div>
             </div>
             <div className="cards">
-              <span>Orders</span>
-              <strong>811</strong>
-              <RiNewspaperLine />
+              <div className="cardInfo">
+                <span>Orders</span>
+                <strong>811</strong>
+              </div>
+              <div className="cardIcon">
+                <RiNewspaperLine size={30} />
+              </div>
             </div>
             <div className="cards">
-              <span>Profits</span>
-              <strong>$2.3k</strong>
-              <BsGraphUp />
+              <div className="cardInfo">
+                <span>Profits</span>
+                <strong>$2.3k</strong>
+              </div>
+              <div className="cardIcon">
+                <BsGraphUp size={30} />
+              </div>
             </div>
             <div className="cards">
-              <span>Users</span>
-              <strong>762</strong>
-              <BsPerson />
+              <div className="cardInfo">
+                <span>Users</span>
+                <strong>762</strong>
+              </div>
+              <div className="cardIcon">
+                <BsPerson size={30} />
+              </div>
             </div>
           </div>
 
