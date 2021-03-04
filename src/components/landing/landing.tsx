@@ -16,10 +16,20 @@ const Landing = () => {
     <div className="landingPage">
       <div className="sidebar">
         {/* logo | home | menu | mensagens | logout */}
-        <DiJqueryUiLogo size={40} />
-        <BiHomeAlt size={40} />
-        <RiDashboardLine size={40} />
-        <BiMessageAltDetail size={40} />
+
+        <ul>
+          <DiJqueryUiLogo size={40} />
+          <li>
+            <BiHomeAlt size={40} />
+          </li>
+          <li>
+            <RiDashboardLine size={40} />
+          </li>
+          <li>
+            <BiMessageAltDetail size={40} />
+          </li>
+        </ul>
+
         <IoMdLogOut size={40} />
       </div>
 
