@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { IoMdLogOut } from 'react-icons/io'
-import { BiHomeAlt, BiMessageAltDetail, BiSearchAlt, BiBell, BiDollar } from 'react-icons/bi'
-import { RiDashboardLine, RiNewspaperLine } from 'react-icons/ri'
-import { DiJqueryUiLogo } from 'react-icons/di'
+import { BiSearchAlt, BiBell, BiDollar } from 'react-icons/bi'
+import { RiNewspaperLine } from 'react-icons/ri'
+
 import { AiOutlineSetting } from 'react-icons/ai'
 import { BsGraphUp, BsPerson } from 'react-icons/bs'
 
 import './landing.css'
+import Sidebar from '../sidebar/sidebar';
 
 // import { Container } from './styles';
 
@@ -15,24 +15,7 @@ const Landing = () => {
   return (
     <div className="landingPage">
 
-      <div className="sidebar">
-        {/* logo | home | menu | mensagens | logout */}
-
-        <ul>
-          <DiJqueryUiLogo size={40} />
-          <li>
-            <BiHomeAlt size={40} />
-          </li>
-          <li>
-            <RiDashboardLine size={40} />
-          </li>
-          <li>
-            <BiMessageAltDetail size={40} />
-          </li>
-        </ul>
-
-        <IoMdLogOut size={40} />
-      </div>
+      <Sidebar />
 
       <div className="landing">
 

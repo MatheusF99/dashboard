@@ -1,0 +1,24 @@
+.sidebar{
+  background: #0F0F0F;
+  color: #fff;
+
+  width: 120px;
+  height: 100%;
+
+  padding: 25px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.sidebar ul > svg{
+  margin-bottom: 60px;
+}
+
+.sidebar ul li{
+  list-style: none;
+  margin: 20px 0;
+}
