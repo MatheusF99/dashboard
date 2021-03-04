@@ -14,6 +14,7 @@ import './landing.css'
 const Landing = () => {
   return (
     <div className="landingPage">
+
       <div className="sidebar">
         {/* logo | home | menu | mensagens | logout */}
 

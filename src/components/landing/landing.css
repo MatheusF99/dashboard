@@ -125,7 +125,7 @@ header .headerMenu .headerSearch input{
 }
 
 
-.landing-content .cards-div{
+.cards-div{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -174,7 +174,9 @@ header .headerMenu .headerSearch input{
   background: #4245f5;
 }
 
-.landing-content .graficos-div{
+
+
+.graficos-div{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
