@@ -18,8 +18,8 @@ const Headers = () => {
           <BiSearchAlt size={25} />
           <input type="text" placeholder="Search..." />
         </div>
-        <a href='http'><AiOutlineSetting size={25} /></a>
-        <a href='http'><BiBell size={25} /></a>
+        <Link to='/'><AiOutlineSetting size={25} /></Link>
+        <Link to='/'><BiBell size={25} /></Link>
       </div>
     </header>
   );

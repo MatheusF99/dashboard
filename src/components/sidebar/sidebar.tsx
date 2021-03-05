@@ -4,8 +4,11 @@ import { BiHomeAlt, BiMessageAltDetail } from 'react-icons/bi';
 import { DiJqueryUiLogo } from 'react-icons/di';
 import { IoMdLogOut } from 'react-icons/io';
 import { RiDashboardLine } from 'react-icons/ri';
+import { FiUsers } from 'react-icons/fi';
+
 
 import './sideabar.css'
+import { Link } from 'react-router-dom';
 
 // import { Container } from './styles';
 
@@ -17,17 +20,30 @@ const Sidebar = () => {
       <ul>
         <DiJqueryUiLogo size={40} />
         <li>
-          <BiHomeAlt size={40} />
+          <Link to='/home'>
+            <BiHomeAlt size={40} />
+          </Link>
         </li>
         <li>
-          <RiDashboardLine size={40} />
+          <Link to='/dashboard'>
+            <RiDashboardLine size={40} />
+          </Link>
         </li>
         <li>
-          <BiMessageAltDetail size={40} />
+          <Link to='/'>
+            <BiMessageAltDetail size={40} />
+          </Link>
+        </li>
+        <li>
+          <Link to='/users'>
+            <FiUsers size={40} />
+          </Link>
         </li>
       </ul>
 
-      <IoMdLogOut size={40} />
+      <Link to='/'>
+        <IoMdLogOut size={40} />
+      </Link>
     </div>
   );
 }

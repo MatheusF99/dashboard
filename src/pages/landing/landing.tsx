@@ -6,9 +6,9 @@ import { RiNewspaperLine } from 'react-icons/ri'
 import { BsGraphUp, BsPerson } from 'react-icons/bs'
 
 import './landing.css'
-import Sidebar from '../sidebar/sidebar';
-import Headers from '../header/header'
-import { GoogleChartsBar, GoogleChartArea, GoogleChartDonut } from '../googlecharts/googlecharts';
+import Sidebar from '../../components/sidebar/sidebar';
+import Headers from '../../components/header/header'
+import { GoogleChartsBar, GoogleChartArea, GoogleChartDonut } from '../../components/googlecharts/googlecharts';
 
 // import { Container } from './styles';
 
