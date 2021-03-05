@@ -105,3 +105,86 @@ export const GoogleChartDonut = () => {
     />
   )
 }
+
+export const GoogleChartTimeline = () => {
+  return (
+    <Chart
+      width={'97.5%'}
+      height={'200px'}
+      chartType="Timeline"
+      loader={<div>Loading Chart</div>}
+      data={[
+        [
+          { type: 'string', id: 'Room' },
+          { type: 'string', id: 'Name' },
+
+          { type: 'date', id: 'Start' },
+          { type: 'date', id: 'End' },
+        ],
+        [
+          'Segunda',
+          'Beginning JavaScript',
+          new Date(0, 0, 0, 12, 0, 0),
+          new Date(0, 0, 0, 13, 30, 0),
+        ],
+
+        [
+          'Segunda',
+          'Intermediate JavaScript',
+          new Date(0, 0, 0, 14, 0, 0),
+          new Date(0, 0, 0, 15, 30, 0),
+        ],
+        [
+          'Segunda',
+          'Advanced JavaScript',
+          new Date(0, 0, 0, 16, 0, 0),
+          new Date(0, 0, 0, 17, 30, 0),
+        ],
+        [
+          'Terça',
+          'Beginning Google Charts',
+          new Date(0, 0, 0, 8, 30, 0),
+          new Date(0, 0, 0, 10, 0, 0),
+        ],
+        [
+          'Terça',
+          'Intermediate Google Charts',
+          new Date(0, 0, 0, 14, 30, 0),
+          new Date(0, 0, 0, 16, 0, 0),
+        ],
+        [
+          'Terça',
+          'Advanced Google Charts',
+          new Date(0, 0, 0, 16, 30, 0),
+          new Date(0, 0, 0, 18, 0, 0),
+        ],
+        [
+          'Quarta',
+          'Beginning JavaScript',
+          new Date(0, 0, 0, 12, 0, 0),
+          new Date(0, 0, 0, 13, 30, 0),
+        ],
+
+        [
+          'Quarta',
+          'Intermediate JavaScript',
+          new Date(0, 0, 0, 14, 0, 0),
+          new Date(0, 0, 0, 15, 30, 0),
+        ],
+        [
+          'Quarta',
+          'Advanced JavaScript',
+          new Date(0, 0, 0, 16, 0, 0),
+          new Date(0, 0, 0, 17, 30, 0),
+        ],
+      ]}
+      options={{
+        timeline: {
+          colorByRowLabel: true,
+        },
+        backgroundColor: '#1B1B1B',
+      }}
+      rootProps={{ 'data-testid': '5' }}
+    />
+  )
+}
