@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineSetting } from 'react-icons/ai';
 import { BiBell, BiSearchAlt } from 'react-icons/bi';
+import { Link } from 'react-router-dom'
 
 // import { Container } from './styles';
 
@@ -17,8 +18,8 @@ const Headers = () => {
           <BiSearchAlt size={25} />
           <input type="text" placeholder="Search..." />
         </div>
-        <a href='//'><AiOutlineSetting size={25} /></a>
-        <a href='//'><BiBell size={25} /></a>
+        <a href='http'><AiOutlineSetting size={25} /></a>
+        <a href='http'><BiBell size={25} /></a>
       </div>
     </header>
   );

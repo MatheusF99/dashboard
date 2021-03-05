@@ -7,10 +7,10 @@ export const GoogleChartsBar = () => {
   return (
     <div>
       <Chart
-        width={400}
-        height={350}
+        width={300}
+        height={310}
         chartType="ColumnChart"
-        loader={<div>Loading Chart</div>}
+        loader={<div>Loading Chart...</div>}
         data={[
           ['City', '2010 Population', '2000 Population'],
           ['JAN', 8175000, 8008000],
@@ -25,14 +25,14 @@ export const GoogleChartsBar = () => {
           ['OCT', 3792000, 3694000],
           ['NOV', 2695000, 2896000],
           ['DEC', 2099000, 1953000],
-        ]}
+        ]
+        }
         options={{
           legend: 'none',
           chartArea: { width: '90%' },
           hAxis: {
             minValue: 0,
             color: '#fff',
-
           },
           isStacked: true,
           backgroundColor: '#1B1B1B',
@@ -49,37 +49,30 @@ export const GoogleChartArea = () => {
       <Chart
         width={'500px'}
         height={'300px'}
-        chartType="LineChart"
+        chartType="AreaChart"
         loader={<div>Loading Chart</div>}
         data={[
-          [
-            { type: 'number', label: 'x' },
-            { type: 'number', label: 'values' },
-            { id: 'i0', type: 'number', role: 'interval' },
-            { id: 'i1', type: 'number', role: 'interval' },
-            { id: 'i2', type: 'number', role: 'interval' },
-            { id: 'i2', type: 'number', role: 'interval' },
-            { id: 'i2', type: 'number', role: 'interval' },
-            { id: 'i2', type: 'number', role: 'interval' },
-          ],
-          [1, 100, 90, 110, 85, 96, 104, 120],
-          [2, 120, 95, 130, 90, 113, 124, 140],
-          [3, 130, 105, 140, 100, 117, 133, 139],
-          [4, 90, 85, 95, 85, 88, 92, 95],
-          [5, 70, 74, 63, 67, 69, 70, 72],
-          [6, 30, 39, 22, 21, 28, 34, 40],
-          [7, 80, 77, 83, 70, 77, 85, 90],
-          [8, 100, 90, 110, 85, 95, 102, 110],
+          ['Year', 'Sales', 'Expenses', 'Revenue'],
+          ['2013', 1000, 400, 200],
+          ['2014', 1170, 460, 300],
+          ['2015', 660, 1120, 800],
+          ['2016', 1030, 540, 100],
+          ['2017', 1000, 400, 200],
+          ['2018', 1170, 460, 300],
+          ['2019', 660, 1120, 800],
+          ['2020', 1030, 540, 100],
         ]}
         options={{
-          chartArea: { width: '90%' },
-          title: 'Line intervals, default',
-          curveType: 'function',
-          lineWidth: 4,
-          intervals: { style: 'line' },
           legend: 'none',
+          hAxis: { titleTextStyle: { color: '#333' } },
+          vAxis: { minValue: 0 },
+          // For the legend to fit, we make the chart area smaller
+          chartArea: { width: '100%', height: '70%' },
+          // lineWidth: 25
           backgroundColor: '#1B1B1B',
+          text: 'Color'
         }}
+        // For tests
         rootProps={{ 'data-testid': '1' }}
       />
     </div>
@@ -92,7 +85,7 @@ export const GoogleChartDonut = () => {
       width={'300px'}
       height={'300px'}
       chartType="PieChart"
-      loader={<div>Loading Chart</div>}
+      loader={<div>Loading Chart...</div>}
       data={[
         ['Task', 'Hours per Day'],
         ['Work', 11],
@@ -103,7 +96,6 @@ export const GoogleChartDonut = () => {
       ]}
       options={{
         legend: 'none',
-        title: 'My Daily Activities',
         chartArea: { width: '90%' },
         // Just add this option
         pieHole: 0.67,
