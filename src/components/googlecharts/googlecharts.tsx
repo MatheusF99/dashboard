@@ -5,7 +5,7 @@ import Chart from 'react-google-charts';
 
 export const GoogleChartsBar = () => {
   return (
-    <div>
+    <div >
       <Chart
         width={300}
         height={310}
@@ -28,7 +28,6 @@ export const GoogleChartsBar = () => {
         ]
         }
         options={{
-          legend: 'none',
           chartArea: { width: '90%' },
           hAxis: {
             minValue: 0,
@@ -63,14 +62,18 @@ export const GoogleChartArea = () => {
           ['2020', 1030, 540, 100],
         ]}
         options={{
-          legend: 'none',
-          hAxis: { titleTextStyle: { color: '#333' } },
+          legend: {
+            labels: {
+              fontColor: 'rgb(255, 99, 132)'
+            }
+          },
+          hAxis: { titleTextStyle: { color: '#fff' } },
           vAxis: { minValue: 0 },
           // For the legend to fit, we make the chart area smaller
           chartArea: { width: '100%', height: '70%' },
           // lineWidth: 25
           backgroundColor: '#1B1B1B',
-          text: 'Color'
+          fontColor: '#fff'
         }}
         // For tests
         rootProps={{ 'data-testid': '1' }}
@@ -183,6 +186,9 @@ export const GoogleChartTimeline = () => {
           colorByRowLabel: true,
         },
         backgroundColor: '#1B1B1B',
+        text: {
+          color: '#fff'
+        }
       }}
       rootProps={{ 'data-testid': '5' }}
     />
