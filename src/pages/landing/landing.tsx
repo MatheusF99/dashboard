@@ -32,7 +32,7 @@ const Landing = () => {
                 <strong>$34k</strong>
               </div>
               <div className="cardIcon">
-                <BiDollar size={30} />
+                <BiDollar size={30} color='white' />
               </div>
             </div>
 
@@ -42,7 +42,7 @@ const Landing = () => {
                 <strong>811</strong>
               </div>
               <div className="cardIcon">
-                <RiNewspaperLine size={30} />
+                <RiNewspaperLine size={30} color='white' />
               </div>
             </div>
 
@@ -52,7 +52,7 @@ const Landing = () => {
                 <strong>$2.3k</strong>
               </div>
               <div className="cardIcon">
-                <BsGraphUp size={30} />
+                <BsGraphUp size={30} color='white' />
               </div>
             </div>
 
@@ -62,7 +62,7 @@ const Landing = () => {
                 <strong>762</strong>
               </div>
               <div className="cardIcon">
-                <BsPerson size={30} />
+                <BsPerson size={30} color='white' />
               </div>
             </div>
 

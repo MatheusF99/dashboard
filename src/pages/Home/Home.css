@@ -3,13 +3,14 @@
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 0fr auto;
+  grid-template-columns: 0fr 1fr 0.3fr;
 
-  background: #242424;
+  background: #F0F0F7;
   color: #fff;
 }
 
 .homeContent{
+  width: 100%;
   height: 100%;
 
   display: flex;
@@ -53,7 +54,9 @@
 .home  .homeCards .activeFeed .activity{
   width: 100%;
   height: 100%;
-  background: #1b1b1b;
+  background: #fff;
+
+  color: #000;
 
   border-radius: 20px;
 
@@ -62,6 +65,7 @@
 
 .home  .homeCards .activeFeed > span{
   margin-bottom: 30px;
+  color: #000;
 }
 
 .activeFeed .activity .perfil{
@@ -108,13 +112,15 @@
 
   border: 0;
 
+  border-radius: 8px;
+
   background: #4245f5;
 
   color: white;
 }
 
 .home  .homeCards .to-dos{
-  background: #1b1b1b;
+  background: #fff;
   
   width: 90%;
 
@@ -122,3 +128,35 @@
   justify-content: center;
   align-items: center;
 }
+
+
+.perfilBar{
+  width: 100%;
+  height: 100%;
+
+  background: #fff;
+  color: black;
+}
+
+.perfilBar .perfilInfo{
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.perfilBar .perfilInfo .perfilPhoto{
+  width: 150px;
+  height: 150px;
+
+  background: #ccc;
+
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+}
+

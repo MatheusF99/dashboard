@@ -34,7 +34,7 @@ export const GoogleChartsBar = () => {
             color: '#fff',
           },
           isStacked: true,
-          backgroundColor: '#1B1B1B',
+          backgroundColor: '#ffffff',
         }}
         legendToggle
       />
@@ -72,7 +72,7 @@ export const GoogleChartArea = () => {
           // For the legend to fit, we make the chart area smaller
           chartArea: { width: '100%', height: '70%' },
           // lineWidth: 25
-          backgroundColor: '#1B1B1B',
+          backgroundColor: '#fff',
           fontColor: '#fff'
         }}
         // For tests
@@ -102,7 +102,7 @@ export const GoogleChartDonut = () => {
         chartArea: { width: '90%' },
         // Just add this option
         pieHole: 0.67,
-        backgroundColor: '#1B1B1B',
+        backgroundColor: '#fff',
       }}
       rootProps={{ 'data-testid': '3' }}
     />
@@ -112,7 +112,7 @@ export const GoogleChartDonut = () => {
 export const GoogleChartTimeline = () => {
   return (
     <Chart
-      width={'97.5%'}
+      width={'100%'}
       height={'200px'}
       chartType="Timeline"
       loader={<div>Loading Chart</div>}
@@ -124,6 +124,7 @@ export const GoogleChartTimeline = () => {
           { type: 'date', id: 'Start' },
           { type: 'date', id: 'End' },
         ],
+        //segunda
         [
           'Segunda',
           'Beginning JavaScript',
@@ -143,6 +144,7 @@ export const GoogleChartTimeline = () => {
           new Date(0, 0, 0, 16, 0, 0),
           new Date(0, 0, 0, 17, 30, 0),
         ],
+        //terca
         [
           'Terça',
           'Beginning Google Charts',
@@ -161,6 +163,7 @@ export const GoogleChartTimeline = () => {
           new Date(0, 0, 0, 16, 30, 0),
           new Date(0, 0, 0, 18, 0, 0),
         ],
+        //quarta
         [
           'Quarta',
           'Beginning JavaScript',
@@ -180,12 +183,72 @@ export const GoogleChartTimeline = () => {
           new Date(0, 0, 0, 16, 0, 0),
           new Date(0, 0, 0, 17, 30, 0),
         ],
+        //quinta
+        [
+          'Quinta',
+          'Beginning JavaScript',
+          new Date(0, 0, 0, 12, 0, 0),
+          new Date(0, 0, 0, 13, 30, 0),
+        ],
+
+        [
+          'Quinta',
+          'Intermediate JavaScript',
+          new Date(0, 0, 0, 14, 0, 0),
+          new Date(0, 0, 0, 15, 30, 0),
+        ],
+        [
+          'Quinta',
+          'Advanced JavaScript',
+          new Date(0, 0, 0, 16, 0, 0),
+          new Date(0, 0, 0, 17, 30, 0),
+        ],
+        //sexta
+        [
+          'Sexta',
+          'Beginning JavaScript',
+          new Date(0, 0, 0, 12, 0, 0),
+          new Date(0, 0, 0, 13, 30, 0),
+        ],
+
+        [
+          'Sexta',
+          'Intermediate JavaScript',
+          new Date(0, 0, 0, 14, 0, 0),
+          new Date(0, 0, 0, 15, 30, 0),
+        ],
+        [
+          'Sexta',
+          'Advanced JavaScript',
+          new Date(0, 0, 0, 16, 0, 0),
+          new Date(0, 0, 0, 17, 30, 0),
+        ],
+        //sabado
+        [
+          'Sabado',
+          'Beginning JavaScript',
+          new Date(0, 0, 0, 12, 0, 0),
+          new Date(0, 0, 0, 13, 30, 0),
+        ],
+
+        [
+          'Sabado',
+          'Intermediate JavaScript',
+          new Date(0, 0, 0, 14, 0, 0),
+          new Date(0, 0, 0, 15, 30, 0),
+        ],
+        [
+          'Sabado',
+          'Advanced JavaScript',
+          new Date(0, 0, 0, 16, 0, 0),
+          new Date(0, 0, 0, 17, 30, 0),
+        ],
       ]}
       options={{
         timeline: {
           colorByRowLabel: true,
         },
-        backgroundColor: '#1B1B1B',
+        backgroundColor: '#fff',
         text: {
           color: '#fff'
         }

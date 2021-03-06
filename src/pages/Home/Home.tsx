@@ -92,10 +92,6 @@ const Home = () => {
               </div>
 
             </div>
-
-            <div className="to-dos">
-              Hello world
-            </div>
           </div>
           <div className="planer">
             <GoogleChartTimeline />
@@ -103,6 +99,63 @@ const Home = () => {
         </div>
 
       </div>
+
+      <div className="perfilBar">
+        {/* perfil | eventos | Notificaçoes */}
+
+        <div className="perfilInfo">
+          <div className="perfilPhoto">
+
+          </div>
+          <span>Jennifer Turner</span>
+          <span> Designer </span>
+        </div>
+
+        <div className="perfilEvents">
+          <div className="eventsBar">
+            <span>next event</span>
+            <button>+ Add</button>
+          </div>
+
+          <div className="eventBox">
+            <div className="eventImage">
+            </div>
+
+            <div className="eventInfo">
+              <span>Corllum</span>
+              <span>May 27 - 9:00AM</span>
+            </div>
+          </div>
+
+          <div className="eventBox">
+            <div className="eventImage">
+            </div>
+
+            <div className="eventInfo">
+              <span>Corllum</span>
+              <span>May 27 - 9:00AM</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="perfilNotification">
+
+          <span></span>
+
+          <div className="notificationBox">
+            <div className="notificationImage">
+            </div>
+
+            <div className="notificationInfo">
+              <span>Corllum</span>
+              <span>May 27 - 9:00AM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   );
 }

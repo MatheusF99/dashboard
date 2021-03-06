@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BiHomeAlt, BiMessageAltDetail } from 'react-icons/bi';
+import { BiHomeAlt } from 'react-icons/bi';
 import { DiJqueryUiLogo } from 'react-icons/di';
 import { IoMdLogOut } from 'react-icons/io';
 import { RiDashboardLine } from 'react-icons/ri';
@@ -27,11 +27,6 @@ const Sidebar = () => {
         <li>
           <Link to='/dashboard'>
             <RiDashboardLine size={40} />
-          </Link>
-        </li>
-        <li>
-          <Link to='/'>
-            <BiMessageAltDetail size={40} />
           </Link>
         </li>
         <li>

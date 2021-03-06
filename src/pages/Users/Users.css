@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 0fr auto;
 
-  background: #242424;
+  background: #F0F0F7;
   color: #fff;
 }
 
@@ -69,4 +69,6 @@ table{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  color: #000;
 }
