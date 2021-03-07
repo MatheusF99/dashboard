@@ -3,7 +3,7 @@
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 0fr 1fr 0.3fr;
+  grid-template-columns: 0fr auto auto;
 
   background: #F0F0F7;
   color: #fff;
@@ -160,3 +160,99 @@
   margin-bottom: 20px;
 }
 
+.perfilEvents{
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.perfilEvents .eventsBar{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.perfilEvents .eventsBar button{
+  border: 0;
+
+  background: none;
+
+  cursor: pointer;
+}
+
+.perfilEvents .eventBox{
+  height: 80px;
+
+  padding: 0 20px;
+
+  background: #F0F0F7;
+
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.perfilEvents .eventBox .eventImage{
+  width: 30px;
+  height: 30px;
+
+  margin-right: 20px;
+
+  background: #ccc;
+
+  border-radius: 8px;
+}
+
+.perfilEvents .eventBox .eventInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.perfilNotification{
+  padding: 10px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.perfilNotification > span{
+  margin-bottom: 20px;
+}
+
+.perfilNotification .notificationBox{
+  height: 80px;
+
+  padding: 0 20px;
+
+  background: #F0F0F7;
+
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.perfilNotification .notificationBox .notificationImage{
+  width: 30px;
+  height: 30px;
+
+  margin-right: 20px;
+
+  background: #ccc;
+
+  border-radius: 8px;
+}
+
+.perfilNotification .notificationBox .notificationInfo{
+  display: flex;
+  flex-direction: column;
+}

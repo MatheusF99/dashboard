@@ -113,7 +113,7 @@ const Home = () => {
 
         <div className="perfilEvents">
           <div className="eventsBar">
-            <span>next event</span>
+            <span>Next event</span>
             <button>+ Add</button>
           </div>
 
@@ -141,7 +141,7 @@ const Home = () => {
 
         <div className="perfilNotification">
 
-          <span></span>
+          <span>New notification</span>
 
           <div className="notificationBox">
             <div className="notificationImage">
