@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+
 import Sidebar from '../../components/sidebar/sidebar';
 import Headers from '../../components/header/header'
 
@@ -88,10 +91,18 @@ const Home = () => {
                   </div>
                 </div>
 
-
               </div>
 
             </div>
+
+            <div className="homeCalendar">
+
+              <span>Calendar</span>
+              <div className="calendario">
+                <Calendar />
+              </div>
+            </div>
+
           </div>
           <div className="planer">
             <GoogleChartTimeline />
